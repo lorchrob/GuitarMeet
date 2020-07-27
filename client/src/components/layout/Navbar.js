@@ -25,7 +25,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <a href='#!'>Developers</a>
+        <a href='#!'>Guitarists</a>
       </li>
       <li>
         <Link to='/register'>Register</Link>
@@ -40,7 +40,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-code'></i> DevConnector
+          <i className='fas fa-code'></i> GuitarMeet
         </Link>
       </h1>
       {!loading && (
