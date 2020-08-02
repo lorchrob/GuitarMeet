@@ -40,7 +40,7 @@ const AddExperience = ({ addExperience, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Job Title'
+            placeholder='* Role'
             name='title'
             value={title}
             onChange={(e) => onChange(e)}
@@ -50,7 +50,7 @@ const AddExperience = ({ addExperience, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Company'
+            placeholder='* Band'
             name='company'
             value={company}
             onChange={(e) => onChange(e)}
@@ -87,7 +87,7 @@ const AddExperience = ({ addExperience, history }) => {
                 toggleDisabled(!toDateDisabled);
               }}
             />{' '}
-            Current Job
+            Current Band
           </p>
         </div>
         <div className='form-group'>

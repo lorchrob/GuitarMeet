@@ -57,14 +57,12 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className='form-group'>
           <select name='status' value={status} onChange={(e) => onChange(e)}>
             <option value='0'>* Select Professional Status</option>
-            <option value='Developer'>Developer</option>
-            <option value='Junior Developer'>Junior Developer</option>
-            <option value='Senior Developer'>Senior Developer</option>
-            <option value='Manager'>Manager</option>
-            <option value='Student or Learning'>Student or Learning</option>
-            <option value='Instructor'>Instructor or Teacher</option>
-            <option value='Intern'>Intern</option>
-            <option value='Other'>Other</option>
+            <option value='Student'>Student</option>
+            <option value='Hobbyist'>Hobbyist</option>
+            <option value='Solo Artist'>Solo Artist</option>
+            <option value='Band: Rhythm Guitar'>Band: Rhythm Guitar</option>
+            <option value='Band: Lead Guitar'>Band: Lead Guitar</option>
+            <option value='Band: Frontman'>Band: Frontman</option>
           </select>
           <small className='form-text'>
             Give us an idea of where you are at in your career
@@ -73,14 +71,12 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Company'
+            placeholder='Band'
             name='company'
             value={company}
             onChange={(e) => onChange(e)}
           />
-          <small className='form-text'>
-            Could be your own company or one you work for
-          </small>
+          <small className='form-text'>Enter your main band or school</small>
         </div>
         <div className='form-group'>
           <input
@@ -91,7 +87,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={(e) => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own or a company website
+            Could be your own or a band website
           </small>
         </div>
         <div className='form-group'>
@@ -109,26 +105,13 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Skills'
+            placeholder='* Genres'
             name='skills'
             value={skills}
             onChange={(e) => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
-          </small>
-        </div>
-        <div className='form-group'>
-          <input
-            type='text'
-            placeholder='Github Username'
-            name='githubusername'
-            value={githubusername}
-            onChange={(e) => onChange(e)}
-          />
-          <small className='form-text'>
-            If you want your latest repos and a Github link, include your
-            username
+            Please use comma separated values (eg. Blues,Rock,Metal)
           </small>
         </div>
         <div className='form-group'>
